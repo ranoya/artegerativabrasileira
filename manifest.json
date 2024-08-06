@@ -1,0 +1,16 @@
+{
+  "short_name": "Arte Gerativa",
+  "name": "Arte Gerativa Brasileira",
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "256x256 48x48 16x16",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff006a",
+  "background_color": "#ff006a"
+}
