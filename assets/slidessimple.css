@@ -95,10 +95,13 @@
   right: 150px !important;
   bottom: var(--inclui-scroll, 0) !important;
   top: unset !important;
+  width: calc(50vw - 160px) !important;
+  text-align: left !important;
 }
 
 #tracktitulos {
-  width: 60vw !important;
+  width: calc(50vw - 10px) !important;
+  text-align: right;
   top: unset !important;
   bottom: var(--inclui-scroll, 0) !important;
 }
