@@ -6,7 +6,7 @@
 }
 
 :root {
-  --track-height: 25px;
+  --track-height: 40px;
 
   --timeline-text-over: #ff006a;
 
@@ -41,12 +41,12 @@
   height: calc(
     100vh - calc(1 * (var(--track-height, 60px))) - var(--inclui-scroll, 0px)
   ) !important;
+
+  margin-top: 0 !important;
 }
 
 .track {
   font-size: 14px;
-  text-transform: uppercase;
-  font-weight: lighter;
 }
 
 .linhadotempo {
@@ -58,26 +58,30 @@
 }
 
 #prev {
-  top: 4px;
+  top: unset !important;
+  bottom: calc(8px + var(--inclui-scroll, 0)) !important;
+
   right: 100px;
 }
 
 #next {
-  top: 4px;
+  top: unset !important;
+  bottom: calc(8px + var(--inclui-scroll, 0)) !important;
+
   right: 50px;
 }
 
 #indice {
   right: 2px !important;
   left: unset !important;
-  top: 2px;
+  top: unset !important;
+  bottom: calc(11px + var(--inclui-scroll, 0)) !important;
 }
 
 #backcontrol {
   display: block;
   right: 0 !important;
-  bottom: unset !important;
-  top: 0 !important;
+  bottom: var(--inclui-scroll, 0) !important;
   width: 150px;
   height: var(--track-height, 25px);
   padding: 0;
@@ -89,8 +93,12 @@
 
 #tracktopicos {
   right: 150px !important;
+  bottom: var(--inclui-scroll, 0) !important;
+  top: unset !important;
 }
 
 #tracktitulos {
-  width: 70vw !important;
+  width: 60vw !important;
+  top: unset !important;
+  bottom: var(--inclui-scroll, 0) !important;
 }
