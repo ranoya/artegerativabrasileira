@@ -180,8 +180,18 @@ void main() {
         revolutionsSlider,
         fbmCheckbox;
 
+      function pausa() {
+        noLoop();
+      }
+
+      function roda() {
+        loop();
+      }
+
       function setup() {
-        createCanvas(windowWidth, windowHeight);
+        let cnv = createCanvas(windowWidth, windowHeight);
+        cnv.mouseOut(pausa);
+        cnv.mouseOver(roda);
         background(0);
         strokeWeight(0.5);
 
