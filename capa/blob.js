@@ -124,8 +124,8 @@ export default ({
     p.draw = function () {
       p.push();
       p.translate((p.width / 3) * -1);
-      p.background(bgcolor);
-      p.fill(fcolor + alfa);
+      p.background(bgcolor + alfa);
+      p.fill(fcolor);
       for (let i = 0; i < 300; i++) {
         p.bolas[i].displace();
         p.bolas[i].desenha();
