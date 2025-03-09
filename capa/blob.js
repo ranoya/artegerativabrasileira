@@ -3,6 +3,7 @@ export default ({
   el = "iddoelemento",
   fcolor = "#000000",
   bgcolor = "#FFFFFF",
+  alfa = "FF",
 }) => {
   let sketch = function (p) {
     p.objecto = function (a, b) {
@@ -124,7 +125,7 @@ export default ({
       p.push();
       p.translate((p.width / 3) * -1);
       p.background(bgcolor);
-      p.fill(fcolor);
+      p.fill(fcolor + alfa);
       for (let i = 0; i < 300; i++) {
         p.bolas[i].displace();
         p.bolas[i].desenha();
