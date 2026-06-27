@@ -125,7 +125,14 @@
 
         }
 
-        canvas:nth-child(1), canvas:nth-child(3),  canvas:nth-child(3) {
+    </style>
+
+    `;
+  }
+</script>
+
+<style>
+    .abre {
         
         position: relative;
         z-index: 3800;
@@ -135,11 +142,23 @@
         margin-left: min(calc(-45vw + (360px + 20px)), 5vw);
         
         }
+</style>
 
-    </style>
+<script>
 
-    `;
-  }
+    setTimeout(
+        
+    function() {
+
+        let els = document.getElementsByTagName("canvas");
+
+        els[0].classList.add("abre");
+        els[2].classList.add("abre");
+
+    }
+    
+    ,3000);
+
 </script>
 
 
