@@ -132,27 +132,21 @@
 </script>
 
 <style>
-    canvas:nth-child(1 of canvas):not(:has(canvas) ~ * *):not(:has(canvas) ~ *):not(canvas ~ * *):not(canvas *) {
+    canvas {
         
-        position: relative;
+        /* position: relative;
         z-index: 3800;
         display: inline-block;
         max-width: 90vw !important;
         width: calc(95vw - 50px) !important;
-        margin-left: min(calc(-45vw + (360px + 20px)), 5vw);
+        margin-left: min(calc(-45vw + (360px + 20px)), 5vw); */
+
+        width: 100% !important;
+        max-width: 720px !important;
         
         }
 
-    canvas {
-  &:not(:has(~ * canvas) *):not(:has(~ canvas) *):not(:has(~ * canvas)):not(:has(canvas)) {
-    position: relative;
-    z-index: 3800;
-    display: inline-block;
-    max-width: 90vw !important;
-    width: calc(95vw - 50px) !important;
-    margin-left: min(calc(-45vw + (360px + 20px)), 5vw);
-  }
-}
+    
 </style>
 
     </body>
